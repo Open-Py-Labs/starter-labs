@@ -4,4 +4,4 @@
 
 Zero-setup Python labs designed to build real-world automation, Ops, and tooling skills -- right in your browser.
 
-**💡 Note for Learners:** GitHub Codespaces is 100% free. It uses your personal account's 60 included monthly free hours. You will never be charged.
+**💡 Codespaces Usage:** Running these labs uses your personal GitHub account's 60 free hours per month for Codespaces. No payment or credit card is required to use your free quota.
