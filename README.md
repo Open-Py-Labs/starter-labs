@@ -1,4 +1,4 @@
-# 🚀 Open Python Labs - Starter Labs
+# 🚀 OpenPyLabs - Starter Labs
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/open-py-labs/starter-labs)
 
