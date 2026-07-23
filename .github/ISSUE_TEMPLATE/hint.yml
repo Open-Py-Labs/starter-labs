@@ -1,0 +1,41 @@
+name: 💡 Hint Submission
+description: Suggest a hint for an existing lab
+title: "[Hint] Lab XX — short description"
+labels: ["hint", "good first issue"]
+body:
+  - type: dropdown
+    id: lab
+    attributes:
+      label: Which lab is this hint for?
+      options:
+        - "01 — Search Query Builder"
+        - "02 — Duplicate File Finder"
+        - "Other / New Lab"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sticking_point
+    attributes:
+      label: What sticking point does this hint address?
+      description: What question or confusion does a learner have that this hint resolves?
+      placeholder: "e.g. Learners often don't know how to handle the case where constraints is None vs an empty list"
+    validations:
+      required: true
+
+  - type: textarea
+    id: hint_text
+    attributes:
+      label: Hint text
+      description: Write the hint. Guide, don't solve. No working solution code that completes a TODO.
+      placeholder: "e.g. Remember that None and [] are both falsy in Python — a single if check can handle both cases."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: spoiler_check
+    attributes:
+      label: Spoiler check
+      options:
+        - label: My hint does not contain code that directly solves a TODO
+          required: true
