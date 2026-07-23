@@ -1,0 +1,50 @@
+name: 🧪 New Lab Proposal
+description: Propose a new lab for OpenPyLabs
+title: "[Lab] XX — Lab Name"
+labels: ["new lab"]
+body:
+  - type: input
+    id: lab_title
+    attributes:
+      label: Lab title
+      placeholder: "e.g. CSV Report Generator"
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What will learners build?
+      description: One or two sentences describing the tool or function they'll implement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: What Python skills does this practice?
+      description: List the core concepts (e.g. file I/O, list comprehensions, classes)
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Draft requirements
+      description: Bullet-point the function's requirements — what must it accept and return?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting a PR, confirm
+      options:
+        - label: Lab uses the `_lab_template/` structure exactly
+          required: false
+        - label: "`starter.py` has no solution code — only TODOs"
+          required: false
+        - label: "`test.py` tests pass on a correct implementation"
+          required: false
+        - label: "Test failure messages are human-readable"
+          required: false
